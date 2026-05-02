@@ -5,7 +5,7 @@ Generates high amount of traffic in the scanned machine, so we must know this ca
 ### TCP SYN Scan
 
 ```shell
-nmap -Ss <target>
+nmap -sS <target>
 ```
 
 Send **SYN** request to a machine, with out handshake. In this way a **SYN-ACK** is sent back to the sender and we know the port is open. The requester at the end does not send the final ACK, resulting in less noise in the network. In this way less traffic and less steps are done in the scan process.
